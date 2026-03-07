@@ -101,20 +101,14 @@ export GOPATH="$HOME/.local/go"
 # - $ZSH_CUSTOM/aliases.zsh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cd="z"
 alias yy="yazi"
 alias typeracer='open -a Safari https://typeracer.com'
 alias randomb='open -a Safari https://www.twoplayergames.org/game/basket-random'
-if [[ $- == *i* ]]; then
-  alias clear='clear && printf "\033[3J"'
-  alias cl=clear
-fi
+alias cl=clear
 alias mimi="ssh aliu45@mimi.cs.mcgill.ca"
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias df=dotfiles # shorthand for convenience
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
