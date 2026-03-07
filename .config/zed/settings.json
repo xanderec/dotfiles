@@ -1,0 +1,102 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "vim_mode": true,
+  "agent_servers": {
+    "claude": {
+      "default_config_options": {
+        "mode": "plan",
+      },
+    },
+    "your_agent": {
+      "type": "custom",
+      "command": "",
+      "args": [],
+      "env": {},
+    },
+  },
+  "edit_predictions": {
+    "provider": "copilot",
+    "mode": "subtle",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+      "enterprise_uri": null,
+    },
+    "enabled_in_text_threads": false,
+  },
+  "agent": {
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-2.5-pro",
+    },
+  },
+  "ui_font_size": 14,
+  "buffer_font_size": 12,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Tokyo Night",
+  },
+  "project_panel": {
+    "indent_size": 15,
+  },
+  "languages": {
+    "Go": {
+      "show_edit_predictions": false,
+      "format_on_save": "on",
+    },
+    "Shell Script": {
+      "show_edit_predictions": false,
+    },
+    "Java": {
+      "show_edit_predictions": false,
+    },
+    "Python": {
+      "show_edit_predictions": false,
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "bash",
+          "arguments": [
+            "-c",
+            "ruff check --select=I --fix --stdin-filename {buffer_path} | ruff format --stdin-filename {buffer_path}",
+          ],
+        },
+      },
+    },
+  },
+  "lsp": {
+    "jdtls": {
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "import": {
+              "gradle": {
+                "enabled": true,
+                "wrapper": {
+                  "enabled": true,
+                },
+              },
+            },
+            "configuration": {
+              "runtimes": [
+                {
+                  "name": "JavaSE-21",
+                  "default": true,
+                },
+              ],
+            },
+          },
+        },
+      },
+    },
+  },
+}
