@@ -7,3 +7,5 @@ macos-option-as-alt = left
 shell-integration-features = no-cursor,path,title
 theme = "TokyoNight Moon"
 window-inherit-working-directory = true
+window-padding-x = 8
+window-padding-balance = true
