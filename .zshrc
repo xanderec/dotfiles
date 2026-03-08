@@ -11,6 +11,9 @@ zinit light Aloxaf/fzf-tab                     # adds fzf picker for completions
 
 zinit snippet OMZP::sudo                       # press esc twice to prepend sudo to current cmd
 
+# ======= startship =======
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
+
 # ======= aliases =======
 alias cd="z"
 alias yy="yazi"
