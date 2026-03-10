@@ -1,0 +1,5 @@
+[icon]
+prepend_dirs = [
+    { name = "Applications", text = "", fg = "#00bcd4" },
+    { name = "src", text = "", fg = "#00bcd4" },
+]
