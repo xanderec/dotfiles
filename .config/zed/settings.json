@@ -7,95 +7,49 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // general settings
   "vim_mode": true,
-  "agent_servers": {
-    "claude": {
-      "default_config_options": {
-        "mode": "plan",
-      },
-    },
-    "your_agent": {
-      "type": "custom",
-      "command": "",
-      "args": [],
-      "env": {},
+  "show_edit_predictions": false,
+  "git": {
+    "inline_blame": {
+      "enabled": true, // show/hide inline blame
+      "delay_ms": 0, // show after delay (ms)
     },
   },
-  "edit_predictions": {
-    "provider": "copilot",
-    "mode": "subtle",
-    "copilot": {
-      "proxy": null,
-      "proxy_no_verify": null,
-      "enterprise_uri": null,
-    },
-    "enabled_in_text_threads": false,
-  },
-  "agent": {
-    "default_profile": "ask",
-    "default_model": {
-      "provider": "google",
-      "model": "gemini-2.5-pro",
-    },
-  },
-  "ui_font_size": 14,
-  "buffer_font_size": 12,
   "theme": {
-    "mode": "system",
+    "mode": "dark",
     "light": "One Light",
     "dark": "Tokyo Night",
   },
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
   "project_panel": {
     "indent_size": 15,
   },
+  "terminal": {
+    "scrollbar": {
+      "show": "never",
+    },
+    "font_size": 12,
+  },
   "languages": {
     "Go": {
-      "show_edit_predictions": false,
-      "format_on_save": "on",
+      "tab_size": 4,
     },
-    "Shell Script": {
-      "show_edit_predictions": false,
+    "Rust": {
+      "tab_size": 4,
     },
     "Java": {
-      "show_edit_predictions": false,
+      "tab_size": 4,
     },
     "Python": {
-      "show_edit_predictions": false,
-      "format_on_save": "on",
-      "formatter": {
-        "external": {
-          "command": "bash",
-          "arguments": [
-            "-c",
-            "ruff check --select=I --fix --stdin-filename {buffer_path} | ruff format --stdin-filename {buffer_path}",
-          ],
-        },
-      },
+      "tab_size": 4,
     },
   },
   "lsp": {
     "jdtls": {
-      "initialization_options": {
-        "settings": {
-          "java": {
-            "import": {
-              "gradle": {
-                "enabled": true,
-                "wrapper": {
-                  "enabled": true,
-                },
-              },
-            },
-            "configuration": {
-              "runtimes": [
-                {
-                  "name": "JavaSE-21",
-                  "default": true,
-                },
-              ],
-            },
-          },
-        },
+      "settings": {
+        "java_home": "/opt/homebrew/opt/openjdk@21",
       },
     },
   },
