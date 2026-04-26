@@ -23,7 +23,6 @@ alias dotf="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"  # track dotfiles
 alias mkdir='mkdir -pv'                                       # creates parent dirs automatically in verbose mode (shows what was created)
 alias cp='cp -iv'                                             # prompts before overwriting, shows what's being copied
 alias mv='mv -iv'                                             # prompts before overwriting, shows what's being moved
-alias rm='trash'                                              # trash, so we can recover mistakes
 alias grep='grep --color=auto'                                # coloured output for grep matches
 alias ll='ls -l'
 
@@ -49,3 +48,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'  # preview di
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
+
+
+export TERM=xterm-256color
