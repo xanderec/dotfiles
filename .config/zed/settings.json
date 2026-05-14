@@ -8,6 +8,26 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // general settings
+  "cli_default_open_behavior": "existing_window",
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry",
+    },
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
   "vim_mode": true,
   "show_edit_predictions": false,
   "git": {
@@ -24,13 +44,15 @@
   "ui_font_size": 12,
   "buffer_font_size": 12,
   "project_panel": {
+    "dock": "left",
     "indent_size": 15,
   },
   "terminal": {
     "scrollbar": {
       "show": "never",
     },
-    "font_size": 12,
+    "font_size": 10,
+    "font_family": "MonaspiceAr Nerd Font",
   },
   "languages": {
     "Go": {
